@@ -1,0 +1,35 @@
+slimit
+diskcache
+django-js-asset
+django-filter # pyup: <2.0.0
+djangorestframework
+django  # pyup: >=1.11,<2
+six
+colorlog # pyup: <4.0.0
+configobj
+django-mptt
+requests
+cheroot
+magicbus
+futures==3.1.1  # Temporarily pinning this until we can do a Python 2/3 compatible solution of newer versions # pyup: <=3.1.1
+more-itertools==5.0.0  # Last Python 2.7 friendly release # pyup: <6.0
+le-utils
+jsonfield
+requests-toolbelt
+morango
+tzlocal
+pytz
+python-dateutil
+sqlalchemy
+semver
+django-redis-cache
+redis
+html5lib
+zeroconf-py2compat
+ifcfg
+Click
+whitenoise
+idna
+ifaddr==0.1.7  # Pin as version 0.2.0 only supports Python 3.7 and above
+importlib_resources
+json-schema-validator

@@ -1,0 +1,11 @@
+{
+    "CommonDeviceStrings.deviceManagementTitle": "Устройство",
+    "CommonDeviceStrings.emptyTasksMessage": "Нет задач для отображения",
+    "CommonDeviceStrings.newChannelLabel": "Новый",
+    "CommonDeviceStrings.newEnabledPluginsState": "Если снять флажок со страницы, она станет невидимой для пользователей, даже если у них есть разрешение на доступ к ней.",
+    "CommonDeviceStrings.newResourceLabel": "Новый",
+    "CommonDeviceStrings.notEnoughSpaceForChannelsWarning": "Недостаточно свободного места на вашем устройстве. Освободите место на диске или выберите меньшее количество ресурсов",
+    "CommonDeviceStrings.permissionsLabel": "Разрешения",
+    "CommonDeviceStrings.primaryStorageLabel": "Вновь загруженные ресурсы будут добавлены в основное место хранения",
+    "CommonDeviceStrings.unlistedChannelLabel": "Незарегистрированный канал"
+}

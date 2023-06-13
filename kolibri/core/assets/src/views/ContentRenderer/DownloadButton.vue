@@ -1,0 +1,93 @@
+<template>
+
+  <KButton
+    ref="button"
+    hasDropdown
+    :primary="$attrs.primary"
+  >
+    <span>{{ $tr('downloadContent') }}</span>
+    <template #menu>
+      <KDropdownMenu
+        :options="fileOptions"
+        @select="download"
+      />
+    </template>
+  </KButton>
+
+</template>
+
+
+<script>
+
+  import { getFilePresetString } from './filePresetStrings';
+
+  export default {
+    name: 'DownloadButton',
+    props: {
+      files: {
+        type: Array,
+        default: () => [],
+      },
+      nodeTitle: {
+        type: String,
+        default: '',
+      },
+    },
+    computed: {
+      fileOptions() {
+        const options = this.files.map(file => {
+          const label = getFilePresetString(file);
+          return {
+            label,
+            url: file.storage_url,
+            fileName: this.$tr('downloadFilename', {
+              resourceTitle: this.nodeTitle,
+              fileExtension: file.extension,
+              fileId: file.checksum.slice(0, 6),
+            }),
+          };
+        });
+        return options;
+      },
+    },
+    methods: {
+      download(file) {
+        const req = new XMLHttpRequest();
+        req.open('GET', file.url, true);
+        req.responseType = 'blob';
+
+        req.onload = function() {
+          const blob = req.response;
+          const blobUrl = window.URL.createObjectURL(blob);
+          try {
+            const a = document.createElement('a');
+            a.download = file.fileName;
+            a.href = blobUrl;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          } catch (e) {
+            window.open(file.url, '_blank');
+          }
+        };
+
+        req.send();
+      },
+    },
+    $trs: {
+      downloadContent: {
+        message: 'Save to device',
+        context:
+          "The 'SAVE TO DEVICE' button allows learners to download learning resources, like a PDF document for example, to their own device.",
+      },
+      downloadFilename: {
+        message: '{ resourceTitle } ({ fileId }).{ fileExtension }',
+        context: 'DO NOT TRANSLATE\nCopy the source string.\n',
+      },
+    },
+  };
+
+</script>
+
+
+<style lang="scss" scoped></style>

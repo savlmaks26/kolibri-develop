@@ -1,0 +1,8 @@
+{
+    "DownloadRequests.downloadStartedLabel": "Скачать запрошенный",
+    "DownloadRequests.goToDownloadsPage": "Перейти к загрузкам",
+    "DownloadRequests.resourceRemoved": "Ресурс удален из моей библиотеки",
+    "PaginatedListContainerWithBackend.nextResults": "Следующие результаты",
+    "PaginatedListContainerWithBackend.pagination": "{ visibleStartRange, number } - { visibleEndRange, number } от { numFilteredItems, number }",
+    "PaginatedListContainerWithBackend.previousResults": "Предыдущие результаты"
+}

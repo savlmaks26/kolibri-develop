@@ -1,0 +1,10 @@
+{
+    "DemoServerBannerContent.demoServerA1": "Прочитайте документацию",
+    "DemoServerBannerContent.demoServerA2": "Загрузите и установите последнюю версию",
+    "DemoServerBannerContent.demoServerHeader": "Добро пожаловать на демонстрационный сайт Kolibri",
+    "DemoServerBannerContent.demoServerL1": "Учащийся ({user}/{pass} или исследование без учетной записи)",
+    "DemoServerBannerContent.demoServerL2": "Тренер ({user}/{pass})",
+    "DemoServerBannerContent.demoServerP1": "Изучите любой из этих типов пользователей:",
+    "DemoServerBannerContent.demoServerP2": "Данная онлайн-версия Kolibri предназначена только для демонстрационных целей. Пользователи и данные будут периодически удаляться. Демонстрация показывает возможности последней версии Kolibri, а все найденные ресурсы являются образцами.",
+    "DemoServerBannerContent.demoServerP3": "Чтобы узнать больше об использовании Kolibri в автономном контексте и лучше понять платформу:"
+}

@@ -1,0 +1,7 @@
+{
+    "BookmarkItem.expand": "No translation",
+    "Bookmarks.bookmarksSection": "Раздел \"Закладки\". Вы можете переключаться между pdf-документом и разделом закладок, нажимая shift + enter.",
+    "PdfPage.numPage": "Страница {number} от {total}",
+    "PdfRendererIndex.enterFullscreen": "Введите полноэкранный режим",
+    "PdfRendererIndex.exitFullscreen": "Выход из полноэкранного режима"
+}
